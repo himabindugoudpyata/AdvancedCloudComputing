@@ -40,39 +40,30 @@ The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6
 
 
 ##### Model Architecture (2 layered CNN )
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-_________________________________________________________________
-
-conv2d_2 (Conv2D)            (None, 28, 28, 32)        832       
-_________________________________________________________________
-max_pooling2d_2 (MaxPooling2 (None, 14, 14, 32)        0         
-_________________________________________________________________
-conv2d_3 (Conv2D)            (None, 14, 14, 64)        51264     
-_________________________________________________________________
-max_pooling2d_3 (MaxPooling2 (None, 7, 7, 64)          0         
-_________________________________________________________________
-reshape_1 (Reshape)          (None, 3136)              0         
-_________________________________________________________________
-flatten_1 (Flatten)          (None, 3136)              0         
-_________________________________________________________________
-dense_2 (Dense)              (None, 1024)              3212288   
-_________________________________________________________________
-dropout_1 (Dropout)          (None, 1024)              0         
-_________________________________________________________________
-dense_3 (Dense)              (None, 10)                10250     
-_________________________________________________________________
+-------------------------------------------------------------------
+Layer (type)         |        Output Shape       |       Param #   |
+|--------------------|---------------------------|-----------------|
+conv2d_2 (Conv2D)      |      (None, 28, 28, 32)   |     832       |
+max_pooling2d_2 (MaxPooling2 |(None, 14, 14, 32)   |     0    |     
+conv2d_3 (Conv2D)         |   (None, 14, 14, 64)    |    51264   |  
+max_pooling2d_3 (MaxPooling2 |(None, 7, 7, 64)    |      0    |     
+reshape_1 (Reshape)      |   (None, 3136)        |      0      |   
+flatten_1 (Flatten)       |   (None, 3136)      |        0        | 
+dense_2 (Dense)       |       (None, 1024)        |      3212288   |
+dropout_1 (Dropout)     |     (None, 1024)       |       0         |
+dense_3 (Dense)         |     (None, 10)           |     10250     |
+-------------------------------------------------------------------
 
 Total params: 3,274,634
 Trainable params: 3,274,634
 
 #### Steps to reproduce our results:
 
-1. Follow the GCP instructions(https://www.kubeflow.org/docs/gke/deploy/) to deploy Kubeflow 
+1. Follow the GCP instructions[https://www.kubeflow.org/docs/gke/deploy/] to deploy Kubeflow 
 
 2. Requirements
 
-    * Kubeflow 1.0 on Kubernetes Engine. See the guide(https://www.kubeflow.org/docs/gke/deploy/)
+    * Kubeflow 1.0 on Kubernetes Engine. See the guide[https://www.kubeflow.org/docs/gke/deploy]
     * Kubeflow Cluster 
     * Launch a Notebook instane on Kubeflow and run the following code using bash termnial
 
@@ -80,7 +71,7 @@ Trainable params: 3,274,634
 
 `pip install msrestazure` 
 
-You must be running Kubeflow 1.0 on Kubernetes Engine (GKE) with Cloud Identity-Aware Proxy (Cloud IAP). See the guide to deploying Kubeflow on GCP(https://www.kubeflow.org/docs/gke/deploy/).
+You must be running Kubeflow 1.0 on Kubernetes Engine (GKE) with Cloud Identity-Aware Proxy (Cloud IAP). See the guide to deploying Kubeflow on GCP[https://www.kubeflow.org/docs/gke/deploy/]
 
 Running KubeFlow for MNIST data on 2 layer CNN
 `python3 kubeflow_main_script.py --tf-model-script=kubeflow_mnist_model.py` 
@@ -96,7 +87,7 @@ Running KubeFlow for CIFAR10 data on 2 layer CNN
 
 `python3 fiber_mnist.py`
 
-5. Use the GCP metrics explorer to track metrics(https://cloud.google.com/monitoring/charts/metrics-explorer)
+5. Use the GCP metrics explorer to track metrics[(https://cloud.google.com/monitoring/charts/metrics-explorer]
 
 ### Results:
 
@@ -120,4 +111,7 @@ Running KubeFlow for CIFAR10 data on 2 layer CNN
 4. MNIST model on tensorflow 1x : https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/estimators/cnn.ipynb
 5. Reference for kubeflow : https://github.com/kubeflow/examples/ 
 
-
+-- git status 
+-- git add .
+-- git commit -m "changes to the readmefile done"
+-- git push 
