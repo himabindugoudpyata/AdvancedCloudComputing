@@ -34,11 +34,11 @@ Fiber is a new Python distributed library (open-sourced). It is designed to enab
 
 The  comparison  of  the  frameworks  (Fiber,  KubeFlow)  in this study is based on the following parameters:
 
-. CPU Utilization: It denotes the percentage of CPU that was used while the neural network were being executed on the dataset.
+**CPU Utilization**: It denotes the percentage of CPU that was used while the neural network were being executed on the dataset.
 
-. Training Time: As neural networks are considered, first the  model  is  trained  using  training  dataset.  Time  taken to train the model is called training time. This varies onthe implementations of the algorithms.
+**Training Time**: As neural networks are considered, first the  model  is  trained  using  training  dataset.  Time  taken to train the model is called training time. This varies onthe implementations of the algorithms.
 
-.Throughput: Decided by the Peak Read and Write times.From  above  metrics  by  comparing  ,we  can  decide  which framework is effective and efficient on larger datasets.
+**Throughput**: Decided by the Peak Read and Write times.From  above  metrics  by  comparing  ,we  can  decide  which framework is effective and efficient on larger datasets.
 
 #### Experiment Apparatus
 
