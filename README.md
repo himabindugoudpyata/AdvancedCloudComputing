@@ -126,7 +126,3 @@ In  conclusion,  this  study  achieved  its  primary  goal  of effectively compa
 4. MNIST model on tensorflow 1x : https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/estimators/cnn.ipynb
 5. Reference for kubeflow : https://github.com/kubeflow/examples/ 
 
--- git status 
--- git add .
--- git commit -m "changes to the readmefile done"
--- git push 
