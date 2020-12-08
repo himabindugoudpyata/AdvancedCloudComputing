@@ -26,19 +26,19 @@ Fiber is a new Python distributed library (open-sourced). It is designed to enab
  
  A two phase approach has been taken to evaluate the performance of neural network algorithms on Fiber and KubeFlow which is described as follows:
 
-    1) Two  different  Datasets/  Problem  types  were chosen for this study:
-        a)  MNIST  Handwritten  digits  Recognition Problem(which  has  over  60000  instances):  Here  the  goal is  to    look  at  an  input  image  and  recognize  which digit is drawn in it.
-        b)  CIFAR-10  Object  Classification  problem  (which has over 50000 instances): Here the goal is to look at  images  of  objects  and  decide  which  of  the  10 classes  (ship,plane  etc)  this  image  belongs  to  and categorize it accordingly.
+1) Two  different  Datasets/  Problem  types  were chosen for this study:
+    a)  MNIST  Handwritten  digits  Recognition Problem(which  has  over  60000  instances):  Here  the  goal is  to    look  at  an  input  image  and  recognize  which digit is drawn in it.
+    b)  CIFAR-10  Object  Classification  problem  (which has over 50000 instances): Here the goal is to look at  images  of  objects  and  decide  which  of  the  10 classes  (ship,plane  etc)  this  image  belongs  to  and categorize it accordingly.
 
-    2)  Both  problem  statements  were  solved  with  the  help  of 2 layer neural networks and deployed on Google   Cloud Platform.
+2)  Both  problem  statements  were  solved  with  the  help  of 2 layer neural networks and deployed on Google   Cloud Platform.
 
 The  comparison  of  the  frameworks  (Fiber,  KubeFlow)  in this study is based on the following parameters:
 
-    1)  CPU Utilization: It denotes the percentage of CPU that was used while the neural network were being executed on the dataset.
+. CPU Utilization: It denotes the percentage of CPU that was used while the neural network were being executed on the dataset.
 
-    2)  Training Time: As neural networks are considered, first the  model  is  trained  using  training  dataset.  Time  taken to train the model is called training time. This varies onthe implementations of the algorithms.
+. Training Time: As neural networks are considered, first the  model  is  trained  using  training  dataset.  Time  taken to train the model is called training time. This varies onthe implementations of the algorithms.
 
-    3)  Throughput: Decided by the Peak Read and Write times.From  above  metrics  by  comparing  ,we  can  decide  which framework is effective and efficient on larger datasets.
+.Throughput: Decided by the Peak Read and Write times.From  above  metrics  by  comparing  ,we  can  decide  which framework is effective and efficient on larger datasets.
 
 #### Experiment Apparatus
 
